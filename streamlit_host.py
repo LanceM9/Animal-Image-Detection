@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
 
 # read up the model
-model = tf.keras.models.load_model("saved_model/mdl_wts.hdf5")
+model = tf.keras.models.load_model("mdl_wts.hdf5")
 
 # this is it, this creates our front-end web page and load the file
 uploaded_file = st.file_uploader("Choose a image file", type="jpg")
